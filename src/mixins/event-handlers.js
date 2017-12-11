@@ -21,6 +21,7 @@ var EventHandlers = {
         targetSlide = previousInt === -1 ? slideCount -1 : previousInt;
       }
     } else if (options.message === 'next') {
+      console.log('Yoalli indide slick event-handlers');
       slideOffset = (indexOffset === 0) ? slidesToScroll : indexOffset;
       targetSlide = currentSlide + slideOffset;
       if (this.props.lazyLoad) {
